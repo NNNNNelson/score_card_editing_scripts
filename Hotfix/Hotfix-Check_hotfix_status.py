@@ -34,7 +34,7 @@ issue_list = re.findall(r'HFIX\-\d+', IM_string)
 
 url = "https://jira.labs.quest.com/rest/api/2/search"
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM0bWltYQ=='}
+headers = {'authorization': '*****'}
 
 for issue in issue_list:
     querystring = {"jql": "key = %s" % (issue)}

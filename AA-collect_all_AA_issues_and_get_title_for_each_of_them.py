@@ -17,7 +17,7 @@ issue_list = re.findall(r'AA\-\d+', IM_string)
 
 url = "https://jira.labs.quest.com/rest/api/2/search"
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 
 for issue in issue_list:
     querystring = {"jql": "key = %s" % (issue)}

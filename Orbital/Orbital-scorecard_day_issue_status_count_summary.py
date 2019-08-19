@@ -27,7 +27,7 @@ def printOutput():
 printOutput()
 
 print("Querying Unresolved issue count...")
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 querystring = {"jql": "sprint = \"%s\" and status was not in (resolved, closed) on \"%s 23:59\" " % (sprint, target_date)}
 response = requests.request("GET", url, headers=headers, params=querystring)
 myData = json.loads(response.text)
@@ -35,7 +35,7 @@ unresolvedCount = myData["total"]
 print("Unresolved issue count is: " + str(unresolvedCount))
 
 print("Querying Resolved issue count...")
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 querystring = {"jql": "sprint = \"%s\" and status was resolved on \"%s 23:59\" " % (sprint, target_date)}
 response = requests.request("GET", url, headers=headers, params=querystring)
 myData = json.loads(response.text)
@@ -43,7 +43,7 @@ resolvedCount = myData["total"]
 print("Resolved issue count is: " + str(resolvedCount))
 
 print("Querying Closed issue count...")
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 querystring = {"jql": "sprint = \"%s\" and status was closed on \"%s 23:59\" " % (sprint, target_date)}
 response = requests.request("GET", url, headers=headers, params=querystring)
 myData = json.loads(response.text)

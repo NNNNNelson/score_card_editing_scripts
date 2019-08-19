@@ -11,7 +11,7 @@ nextSprint = "2019 ACE.5 Sprint5"
 querystring = {"jql": "project in (fgl, wcf) and sprint in (\"%s\", \"%s\") and status was not in (\"Under Review\", resolved, closed) on \"20190214\"order by type" % (currentSprint, nextSprint)}
 
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTMxbWltYQ=='}
+headers = {'authorization': '*****'}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 

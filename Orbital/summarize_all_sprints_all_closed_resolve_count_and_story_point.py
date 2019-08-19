@@ -16,7 +16,7 @@ def printOutput(outputStr):
 
 
 url = "https://jira.labs.quest.com/rest/api/2/search?maxResults=100"
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM0bWltYQ=='}
+headers = {'authorization': '*****'}
 
 sprint_start_days = ['02/19', '03/05', '03/19', '04/02', '04/16', '04/30', '05/21', '06/04', '06/18', '07/02']
 # sprint_end_days = ['03/04', '03/18', '04/01', '04/15', '04/29', '05/20', '06/03', '06/17', '07/01', '07/15']

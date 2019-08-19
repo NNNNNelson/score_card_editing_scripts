@@ -27,7 +27,7 @@ printOutput()
 # querystring = {"jql": "project in (fgl, wcf) and sprint = \"%s\" and status was not in (\"Under Review\", resolved, closed) on \"20191212\" order by type" % (sprint)}
 querystring = {"jql": "project in (fgl, wcf) and fixversion = Ace.5 and status was not in (\"Under Review\", resolved, closed) on \"20190801\" order by type"}
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 
 
 response = requests.request("GET", url, headers=headers, params=querystring)

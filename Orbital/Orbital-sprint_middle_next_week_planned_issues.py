@@ -27,7 +27,7 @@ printOutput()
 # querystring = {"jql": "project in (fgl, wcf) and sprint = \"%s\" and status was not in (\"Under Review\", resolved, closed) on \"20191212\" order by type" % (sprint)}
 querystring = {"jql": "sprint = \"%s\" and status was not in (\"Under Review\", resolved, closed) on \"201900801\" order by type" % (sprint)}
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 
 print("Querying data from JIRA...")
 

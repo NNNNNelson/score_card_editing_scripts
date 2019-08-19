@@ -25,7 +25,7 @@ def printOutput():
 
 printOutput()
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 
 # Query unresolved issue count
 print("Querying " + query_target_day_str + " Unresolved issue count...")

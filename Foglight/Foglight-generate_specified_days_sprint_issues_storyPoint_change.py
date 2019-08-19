@@ -18,7 +18,7 @@ while start_day_date <= end_day_date:
 
     querystring = {"jql": "project in (fgl, wcf) and sprint = \"%s\" and status was not in (\"Under Review\", resolved, closed) on \"%s 23:59\" order by type" % (sprint, start_day_date_to_str)}
 
-    headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTMybWltYQ=='}
+    headers = {'authorization': '*****'}
 
     response = requests.request("GET", url, headers=headers, params=querystring)
 

@@ -30,7 +30,7 @@ printOutput()
 # querystring = {"jql": "project in (fgl, wcf) and sprint in (\"%s\", \"%s\") and status was not in (\"Under Review\", resolved, closed) on \"%s 04:00\" and status in (\"Under Review\", resolved, closed) order by type" % (sprint1, sprint2, the_first_day)}
 querystring = {"jql": "project in (fgl, wcf) and status was not in (\"Under Review\", resolved, closed) on \"%s 04:00\" and status was in (\"Under Review\", resolved, closed) on \"2019/08/01\" order by type" % (the_first_day)}
 
-headers = {'authorization': 'Basic bmVsc29uLndhbmdAcXVlc3QuY29tOlNIRU5NRTM1bWltYQ=='}
+headers = {'authorization': '*****'}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
